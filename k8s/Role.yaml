@@ -2,8 +2,8 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   namespace: default
-  name: secret-reader
+  name: secret-manager
 rules:
 - apiGroups: [""]
   resources: ["secrets"]
-  verbs: ["create", "get", "list", "update", "delete"]
+  verbs: ["*"]
