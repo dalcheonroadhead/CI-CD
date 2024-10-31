@@ -21,11 +21,7 @@ spec:
               value: Asia/Seoul
             - name: DATABASE_URL
               value: jdbc:mariadb://mariadb:3306/krampoline
-            - name: OPENAI_API_KEY
-              valueFrom:
-                secretKeyRef:
-                  name: openai-api-key-secret  # 위에서 생성한 secret의 이름
-                  key: OPENAI_API_KEY          # 시크릿에 저장된 키 이름 
+
           resources:
             requests:
               memory: 1Gi
